@@ -144,7 +144,7 @@ def equal_protein(new_file1, new_file2, f1, f2, chain1, chain2):
         if l1[:4] == 'ATOM':
             if l1[21] == chain1:
                 # appends the atom number, the residue name and its number, respectively
-                list_of_res1.append((l1[7:11], l1[17:20], l1[23:26]))
+                list_of_res1.append((l1[13:16], l1[17:20], l1[23:26]))
 
     # eliminates the multiple entries
     list_of_res1 = list(set(list_of_res1))
@@ -152,7 +152,7 @@ def equal_protein(new_file1, new_file2, f1, f2, chain1, chain2):
     for l2 in lines_f2:
         if 'ATOM' in l2[:4]:
             if l2[21] == chain2:
-                list_of_res2.append((l2[7:11], l2[17:20], l2[23:26]))
+                list_of_res2.append((l2[13:16], l2[17:20], l2[23:26]))
     list_of_res2 = list(set(list_of_res2))
 
     # gets the intersection between the groups of residues
@@ -164,13 +164,13 @@ def equal_protein(new_file1, new_file2, f1, f2, chain1, chain2):
 
     # writes two pdb files only with the common residues (they'll be the new 'input')
     for line in lines_f1:
-        if (line[7:11], line[17:20], line[23:26]) in intersec_res:
+        if (line[13:16], line[17:20], line[23:26]) in intersec_res:
             if 'ATOM' in line[:4] and line[21] == chain1:
                 if 'H' not in line[77:78]:
                     new_file1.write(line)
 
     for line in lines_f2:
-        if (line[7:11], line[17:20], line[23:26]) in intersec_res:
+        if (line[13:16], line[17:20], line[23:26]) in intersec_res:
             if 'ATOM' in line[:4] and line[21] == chain2:
                 if 'H' not in line[77:78]:
                     new_file2.write(line)
