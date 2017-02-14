@@ -46,7 +46,6 @@ import os
 #                                       INITIAL TREATMENT OF THE FILE
 #
 ###############################################################################################################
-# this is a test
 # Calculates the centroid of the protein
 def calc_centroid(protein):
 
