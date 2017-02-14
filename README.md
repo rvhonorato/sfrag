@@ -43,5 +43,5 @@ The algorithm gives as output PDB files with the calculated errors replacing the
 
 PS.: The steps of the algorithm are commented on it.
 
-## Contact
-Bruna Inacio Trajano (brunainaciot@gmail.com)
+## Problems? Suggestions? Let me know!
+Send an e-mail to Bruna Inacio Trajano (brunainaciot@gmail.com).
