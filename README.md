@@ -17,6 +17,7 @@ The algorithm has the following parameters:
 - a: in fragments method, considers all the atoms in the analysis (the default is to consider only CAs).
 
 Only one method (fragments or spheres) is allowed each time that the algorithm is executed.
+
 Usage example: *1b39.pdb 1fq1.pdb A B -frag -rmsd -s=7*
 
 ## RMSD
@@ -31,6 +32,7 @@ If requested, the algorithm divides the proteins in fragments. For example, if t
 - fragment 1 = 1, 2, 3, 4, 5
 - fragment 2 = 2, 3, 4, 5, 6
 - fragment 3 = 3, 4, 5, 6, 8 etc
+
 For each fragment, a translation and a rotation are done to verify (by RMSD and/or Canyon) how much they match. So every fragment has a value that indicates its similarity, and this value is associated with the middle residue of the fragment (3, 4 and 5, in the example).
 
 ## Spheres
