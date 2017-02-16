@@ -1,7 +1,7 @@
 ## What is SFrag?
 **SFrag** - *Spheres and Fragments Protein Comparator* is an algorithm that compares two conformations of the same protein. It divides the conformations in **fragments** *or* **spheres** and compares them fragment by fragment or sphere by sphere.
 
-This software was developed by **Bruna Inácio Trajano** during the [26th Summer Internship Program](http://pages.cnpem.br/bolsasdeverao/) at the [National Center of Research in Energy and Materials - CNPEM](cnpem.br) and was advised by [Rodrigo Honorato](https://github.com/rodrigovrgs), PhD and [José Geraldo de Carvalho](https://github.com/jgcarvalho), MsC.
+This software was developed by **Bruna Inácio Trajano** during the [26th Summer Internship Program](http://pages.cnpem.br/bolsasdeverao/) at the [National Center of Research in Energy and Materials - CNPEM](http://cnpem.br) and was advised by [Rodrigo Honorato](https://github.com/rodrigovrgs), PhD and [José Geraldo de Carvalho](https://github.com/jgcarvalho), MsC.
 
 ## Requirements
 
@@ -86,7 +86,7 @@ If requested, the algorithm divides the proteins in fragments `-frag`. For examp
 
 
 
-For each fragment, a translation and a rotation are done to verify (by RMSD and/or Canyon) how much they match. So every fragment has a value that indicates its similarity, and this value is associated with the middle residue of the fragment (3, 4 and 5, in the example).
+For each fragment, a translation and a rotation are done to verify (by RMSD and/or Canyon) how much they match. So every fragment has a value that indicates its similarity, and this value is associated with the middle residue of the fragment (3, 4, 5 and 6, in the example).
 
 ## Spheres
 If requested, the algorithm divides the proteins in spheres. Each CA of each protein is the center of a sphere with radius set by the user. Then, the union of the atoms of both spheres is made and, for each sphere, RMSD and/or Canyon is calculated.
