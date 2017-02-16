@@ -1,7 +1,7 @@
 ## What is SFrag?
 **SFrag** - *Spheres and Fragments Protein Comparator* is an algorithm that compares two conformations of the same protein. It divides the conformations in **fragments** *or* **spheres** and compares them fragment by fragment or sphere by sphere.
 
-This software was developed by **Bruna Inácio Trajano** during the [26th Summer Internship Program](http://pages.cnpem.br/bolsasdeverao/) at the [National Center of Research in Energy and Materials - CNPEM](cnpem.br) and was advised by [Rodrigo Honorato](https://github.com/rodrigovrgs), PhD and [José Geraldo de Carvalho](https://github.com/jgcarvalho), MsC.
+This software was developed by **Bruna Inácio Trajano** during the [26th Summer Internship Program](http://pages.cnpem.br/bolsasdeverao/) at the [National Center of Research in Energy and Materials - CNPEM](http://www.cnpem.br) and was advised by [Rodrigo Honorato](https://github.com/rodrigovrgs), PhD and [José Geraldo de Carvalho](https://github.com/jgcarvalho), MsC.
 
 ## Requirements
 
